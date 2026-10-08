@@ -1,0 +1,14 @@
+Implementation of ls(1)
+=======================
+
+Files:
+- ls.c, ls.h: Main entry, argument parsing (getopt), directory traversal.
+- print.c, print.h: Output formatting for regular and long format (-l).
+- cmp.c, cmp.h: Comparison functions for sorting by name or mtime (-t, -r).
+- Makefile: Build automation with strict C99 and warning flags.
+
+Testing:
+Outputs were tested against standard system /bin/ls using diff:
+- ./ls > out1 && /bin/ls -1 > out2 && diff out1 out2
+- ./ls -l > out1 && /bin/ls -l > out2 && diff out1 out2
+- ./ls -la > out1 && /bin/ls -la > out2 && diff out1 out2

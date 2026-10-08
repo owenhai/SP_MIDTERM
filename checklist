@@ -1,0 +1,5 @@
+[X] Code split into multiple source and header files
+[X] Makefile compiles cleanly with -Wall -Wextra -Werror -pedantic -std=c99
+[X] Flags supported: -a, -A, -d, -l, -r, -t
+[X] README with testing description provided
+[X] Git history maintained
